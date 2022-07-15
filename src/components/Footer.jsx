@@ -1,12 +1,13 @@
 import React from "react";
 
 const Footer = () => {
+  const curentYear = new Date().getFullYear();
   return (
     <footer>
       <div className="container">
         <div className="footer-container">
           <div className="left-side">
-            <p>Copyright © 2022 Michael Jahans</p>
+            <p>Copyright © {curentYear} Michael Jahans</p>
           </div>
           <div className="right-side">
             <a href="/">
