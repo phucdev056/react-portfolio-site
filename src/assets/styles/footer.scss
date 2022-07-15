@@ -1,3 +1,17 @@
 footer {
-    
+    background: #0b0a0a;
+
+    .footer-container {
+        border-top: 1px solid rgba(255,255,255,.08);
+        padding: 27px 0;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg {
+            fill: #cacaca;
+            margin-left: 15px;
+        }
+    }
 }
