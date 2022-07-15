@@ -20,9 +20,9 @@ const Hero = () => {
           <div className="video-grid">
             {videoData.map((video) => (            
               <div className="video-grid-item" key={video.id} onClick={() => handleVisibleVideoModal(video)}>
-                <div class="video-grid-item-inner">
+                <div className="video-grid-item-inner">
                   <img src={video.image} alt="video" />
-                  <div class="video-grid-item-title">
+                  <div className="video-grid-item-title">
                     <span>{video.title}</span>
                   </div>
                 </div>

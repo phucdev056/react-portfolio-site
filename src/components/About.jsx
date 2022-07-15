@@ -22,7 +22,7 @@ const About = () => {
           <p>I have a wide range of experience with many types of edits, so no matter the job you need done, send me the details and we can get it done. My expertise has amassed millions of monthly viewers and built loyal fanbases.</p>
           <a
             href="#arrival-contact"
-            class="primary-link"
+            className="primary-link"
             role="button"
           > Work with me</a>
         </div>
