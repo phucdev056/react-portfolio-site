@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { videoData } from "../constants";
+import CloseIcon from "../assets/images/close.png";
 
 const Hero = () => {
   const [selectedVideo, setSelectedVideo] = useState();
@@ -34,7 +35,10 @@ const Hero = () => {
       {modalOpen && (
         <section className="modal__bg">
           <div className="modal__align">
-            <div className="modal__content" modal={modalOpen}>              
+            <div className="modal__content">
+              <div className="modal__close" onClick={() => setModalOpen(false)}>
+                <img src={CloseIcon} alt="" />
+              </div>             
               <div className="modal__video-align">
                 <iframe
                   className="modal__video-style"                
@@ -45,7 +49,7 @@ const Hero = () => {
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
 
                 <p className="video-title">{selectedVideo.title}</p>

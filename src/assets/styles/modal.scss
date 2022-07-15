@@ -38,17 +38,26 @@
     border-radius: 8px;
     border: 5px solid lightgray;
     padding: 20px;
+    position: relative;
 }
   
 .modal__close {
     background-color: white;
     border-radius: 50%;
     cursor: pointer;
-    position: relative;
-    bottom: 50px;
+    position: absolute;
     width: 32px;
     height: 32px;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -19px;
+    right: -16px;
+
+    img {
+      width: 20px;
+    }
 }
   
 .modal__video-align {
