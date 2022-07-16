@@ -21,6 +21,9 @@ const Header = () => {
         <div className="mobile-menu mobile" onClick={() => setVisibleMobileMenu(true)}>
           <img src={MenuIcon} alt="" />
         </div>
+        <div className="mobile-menu mobile" onClick={() => setVisibleMobileMenu(true)}>
+          <img src={MenuIcon} alt="" />
+        </div>
       </div>
       {visibleMobileMenu && (
         <div className="mobile-menu-content">
