@@ -9,17 +9,35 @@ p {
 }
 
 .primary-link {
-  font-family: "Poppins",Sans-serif;
+  font-family: "Poppins", Sans-serif;
   background-color: #363636;
-  padding: 20px 40px 20px 40px;
+  padding: 10px 20px;
   font-size: 15px;
   color: white;
   display: block;
   width: 182px;
   box-sizing: border-box;
   text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
 
   &:hover {
     background-color: #f0d10f;
+    color: #363636;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .mobile {
+    display: none !important;
   }
 }

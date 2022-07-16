@@ -1,9 +1,18 @@
 import HomePage from "./page/Home";
+import {
+  BrowserRouter as Router, 
+  Routes, 
+  Route
+} from 'react-router-dom';
 
 const App = () => {
   return (
     <div className="App">
-      <HomePage />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />          
+        </Routes>
+      </Router>
     </div>
   );
 }
